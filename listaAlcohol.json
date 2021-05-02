@@ -1,0 +1,72 @@
+[
+    {
+        "country": "Belarus",
+        "beer_servings": "142",
+        "spirit_servings": "373",
+        "wine_servings": "42",
+        "total_litres_of_pure_alcohol": "14.4"
+    },
+    {
+        "country": "Lithuania",
+        "beer_servings": "343",
+        "spirit_servings": "244",
+        "wine_servings": "56",
+        "total_litres_of_pure_alcohol": "12.9"
+    },
+    {
+        "country": "Andorra",
+        "beer_servings": "245",
+        "spirit_servings": "138",
+        "wine_servings": "312",
+        "total_litres_of_pure_alcohol": "12.4"
+    },
+    {
+        "country": "Grenada",
+        "beer_servings": "199",
+        "spirit_servings": "438",
+        "wine_servings": "28",
+        "total_litres_of_pure_alcohol": "11.9"
+    },
+    {
+        "country": "Czech Republic",
+        "beer_servings": "361",
+        "spirit_servings": "170",
+        "wine_servings": "134",
+        "total_litres_of_pure_alcohol": "11.8"
+    },
+    {
+        "country": "France",
+        "beer_servings": "127",
+        "spirit_servings": "151",
+        "wine_servings": "370",
+        "total_litres_of_pure_alcohol": "11.8"
+    },
+    {
+        "country": "Russian Federation",
+        "beer_servings": "247",
+        "spirit_servings": "326",
+        "wine_servings": "73",
+        "total_litres_of_pure_alcohol": "11.5"
+    },
+    {
+        "country": "Ireland",
+        "beer_servings": "313",
+        "spirit_servings": "118",
+        "wine_servings": "165",
+        "total_litres_of_pure_alcohol": "11.4"
+    },
+    {
+        "country": "Luxembourg",
+        "beer_servings": "236",
+        "spirit_servings": "133",
+        "wine_servings": "271",
+        "total_litres_of_pure_alcohol": "11.4"
+    },
+    {
+        "country": "Slovakia",
+        "beer_servings": "196",
+        "spirit_servings": "293",
+        "wine_servings": "116",
+        "total_litres_of_pure_alcohol": "11.4"
+    }
+]

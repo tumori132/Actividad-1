@@ -24,13 +24,13 @@ def build1(lista):
     layout = [[sg.Text(' ')]
                 ]
     for linea in lista:
-        layout +=[[sg.Text('Pais: '+linea['country']),sg.Text('Consumo Total: '+linea['total_litres_of_pure_alcohol'])]
+        layout +=[[sg.Text('Pais: '+linea['country']),sg.Text('Consumo per capita total: '+linea['total_litres_of_pure_alcohol'])]
             ]
     layout += [[sg.Button('Salir',size=(40,3),pad=(200,10))]]
     window = sg.Window('Paises Consumidores', layout, size=(600,400),no_titlebar=True)
     return window
 
-def build2(lista):
+def build2(lista,promedio):
     """
         Build de la ventana opcion 2 donde se imprimira
         toda la info sobre los estadios de la mls
@@ -40,6 +40,7 @@ def build2(lista):
     for linea in lista:
         layout +=[[sg.Text('Equipo: '+linea['ï»¿team']),sg.Text('Nombre: '+linea['stadium']),sg.Text('   Capacidad del estadio: '+linea['stadium_capacity'])]
             ]
+    layout += [[sg.Text('El promedio entre los 10 es de: '+str(round(promedio))+', una locura')]]
     layout += [[sg.Button('Salir',size=(40,3),pad=(200,10))]]
     window = sg.Window('Lista de Estadios MLS', layout, size=(600,400),no_titlebar=True)
     return window

@@ -3,6 +3,13 @@ import json
 import csv
 import Window
 
+def prom(datos):
+    """
+        prom saca el promedio de capacidad de la lista con
+        los 10 estadios mas grandes de la MLS
+    """
+    return sum(int(linea['stadium_capacity']) for linea in datos)/ float(len(datos))
+
 def guardar_archivo(ruta,datos):
     """
         Crea el archivo en la ruta que recibe y la lista 
@@ -45,7 +52,7 @@ def loop ():
             window1 = Window.build()
 
         if event == '-OPCION1-':
-            sg.popup('Entraste a Alcohol en el mundo','A continuacion veras los 10 paises que consumen mas alcohol')
+            sg.popup('Entraste a Alcohol en el mundo','A continuacion veras los 10 paises que consumen mas alcohol','MENSAJE: el consumo total per capita es en litros total de alcohol')
             datos = abrir_archivo('./drinks.csv','total_litres_of_pure_alcohol')
             guardar_archivo('./listaAlcohol.json',datos)
             window1.close()
@@ -54,6 +61,7 @@ def loop ():
         if event == '-OPCION2-':
             sg.popup('Entraste a estadios de la MLS','A continuacion los 10 estadios mas grandes de la MLS')
             datos = abrir_archivo('./mls.csv','stadium_capacity')
+            promedio = prom(datos)
             guardar_archivo('./listaMLS.json',datos)
             window1.close()
-            window1 = Window.build2(datos)
+            window1 = Window.build2(datos,promedio)
