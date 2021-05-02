@@ -1,0 +1,2 @@
+pysimplegui==4.38.0
+python==3.8.0
